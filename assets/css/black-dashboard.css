@@ -1,12 +1,12 @@
 /* This is is written by me shubham-sangale-1 */
 .custom-select {
-  background-color: #f8f9fa; /* Light gray background */
+  /* background-color: #f8f9fa; = */
   color: #000; /* Black text */
 }
 
 .custom-select option {
   background-color: #272a3d; /* White background for options */
-  color: #ffffff; /* Black text for options */
+  color: #6c757d; /* Black text for options */
 }
 
 .custom-button {
