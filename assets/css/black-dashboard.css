@@ -1,21 +1,28 @@
 /* This is is written by me shubham-sangale-1 */
 .custom-select {
-  /* background-color: #f8f9fa; = */
-  color: #000; /* Black text */
+  color: #000; 
 }
 
 .custom-select option {
-  background-color: #272a3d; /* White background for options */
-  color: #6c757d; /* Black text for options */
+  background-color: #272a3d; 
+  color: #6c757d; 
 }
 
 .custom-button {
   background-color: #d850d5;
 }
+
+.progress{
+  height: 20px !important; /* Set the height for the progress bar container */
+}
+
+.my-progress-bar {
+  height: 100%; 
+}
+
+
 /* This is is written by me shubham-sangale-1 */
 
-/*     brand Colors              */
-/* navbar color */
 
 :root {
   --blue: #5e72e4;
