@@ -1,15 +1,15 @@
 # Finance Tracker for Organization
 
-This project was developed as part of the Construct Week at Masai School. The Finance Tracker is designed to help organizations keep track of their financial transactions and monitor their financial health efficiently. The project implements various front-end and back-end technologies to deliver a robust solution for financial tracking.
+This project was developed as part of the Construct Week at Masai School. The Finance Tracker is designed to help organizations keep track of their financial transactions and monitor their financial health efficiently. The project implements various front-end technologies to deliver a robust solution for financial tracking.
 
 ## Team Details
 
-- **Team Leader:** Shubham Sanagle
+- **Team Leader:** Shubham Sangale
 - **Team Members:**
   - Sakshi Madne
-  - Shiv Sahini
-  - Afrin
+  - Shiv Sahni
   - Sharvari Patil
+  - Afrin
 
 ---
 
