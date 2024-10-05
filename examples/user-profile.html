@@ -174,80 +174,200 @@
       <div class="content">
         <div class="row">
           <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="title">Edit Profile</h5>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="row">
-
-                    <div class="col-md-6 pr-md-1">
-                      <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" placeholder="Username">
-                      </div>
-                    </div>
-                    <div class="col-md-6 pl-md-1">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" placeholder="mike@email.com">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 pr-md-1">
-                      <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="First Name">
-                      </div>
-                    </div>
-                    <div class="col-md-6 pl-md-1">
-                      <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last Name">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" class="form-control" placeholder="Home Address">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 pr-md-1">
-                      <div class="form-group">
-                        <label>City</label>
-                        <input type="text" class="form-control" placeholder="City">
-                      </div>
-                    </div>
-                    <div class="col-md-4 px-md-1">
-                      <div class="form-group">
-                        <label>Country</label>
-                        <input type="text" class="form-control" placeholder="Country">
-                      </div>
-                    </div>
-                    <div class="col-md-4 pl-md-1">
-                      <div class="form-group">
-                        <label>Postal Code</label>
-                        <input type="number" class="form-control" placeholder="ZIP Code">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="form-group">
-                        <label>About Me</label>
-                        <textarea rows="4" cols="80" class="form-control"
-                          placeholder="Here can be your description"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
+             
+<div class="card">
+  <div class="card-header" id="editProfileHeader">
+    <h5 class="mb-0">
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEditProfile" aria-expanded="true" aria-controls="collapseEditProfile">
+        Edit Profile
+      </button>
+    </h5>
+  </div>
+  <div id="collapseEditProfile" class="collapse show" aria-labelledby="editProfileHeader" data-parent="#accordion">
+    <div class="card-body">
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Username</label>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control" placeholder="abc@email.com">
+            </div>
+          </div>
+        </div>
+        
+      
+  <div class="row">
+    <div class="col-md-6 pr-md-1">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="Company">
+      </div>
+    </div>
+    <div class="col-md-6 pl-md-1">
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label>Address</label>
+        <input type="text" class="form-control" placeholder="Home Address">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 pr-md-1">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" class="form-control" placeholder="City">
+      </div>
+    </div>
+    <div class="col-md-4 px-md-1">
+      <div class="form-group">
+        <label>Country</label>
+        <input type="text" class="form-control" placeholder="Country">
+      </div>
+    </div>
+    <div class="col-md-4 pl-md-1">
+      <div class="form-group">
+        <label>Postal Code</label>
+        <input type="number" class="form-control" placeholder="ZIP Code">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <label>About Me</label>
+        <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description"></textarea>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+ 
+<div class="card">
+  <div class="card-header" id="securitySettingsHeader">
+    <h5 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSecuritySettings" aria-expanded="false" aria-controls="collapseSecuritySettings">
+        Security Settings
+      </button>
+    </h5>
+  </div>
+  <div id="collapseSecuritySettings" class="collapse" aria-labelledby="securitySettingsHeader" data-parent="#accordion">
+    <div class="card-body">
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Current Password</label>
+              <input type="password" class="form-control" placeholder="Current Password">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>New Password</label>
+              <input type="password" class="form-control" placeholder="New Password">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Two-Factor Authentication</label>
+              <select class="form-control">
+                <option>Disabled</option>
+                <option>Enabled</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Manage Linked Accounts</label>
+              <input type="text" class="form-control" placeholder="Linked Accounts Info">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header" id="connectedAccountsHeader">
+    <h5 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseConnectedAccounts" aria-expanded="false" aria-controls="collapseConnectedAccounts">
+        Connected Accounts
+      </button>
+    </h5>
+  </div>
+  <div id="collapseConnectedAccounts" class="collapse" aria-labelledby="connectedAccountsHeader" data-parent="#accordion">
+    <div class="card-body">
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Bank Account 1</label>
+              <input type="text" class="form-control" value="Bank Name - Balance: $1000" readonly>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Credit Card 1</label>
+              <input type="text" class="form-control" value="Card Name - Balance: $500" readonly>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header" id="socialFeaturesHeader">
+    <h5 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSocialFeatures" aria-expanded="false" aria-controls="collapseSocialFeatures">
+        Social Features
+      </button>
+    </h5>
+  </div>
+  <div id="collapseSocialFeatures" class="collapse" aria-labelledby="socialFeaturesHeader" data-parent="#accordion">
+    <div class="card-body">
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Connect with Friends</label>
+              <input type="text" class="form-control" placeholder="Friend Username or Email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Your Achievements</label>
+              <textarea rows="4" cols="80" class="form-control" placeholder="Display user achievements..."></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="accordion">
+  <!-- Collapsible Edit Profile Section -->
+   
+              
+              
               <div class="card-footer">
                 <button type="submit" class="btn btn-fill btn-primary">Save</button>
               </div>
@@ -257,25 +377,22 @@
             <div class="card card-user">
               <div class="card-body">
                 <p class="card-text">
-                <div class="author">
-                  <!-- <div class="block block-one"></div>
-                  <div class="block block-two"></div>
-                  <div class="block block-three"></div>
-                  <div class="block block-four"></div> -->
-                  <a href="javascript:void(0)">
-                    <img class="avatar"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZuph_E9D7pHDAGm-xPTvraQNQbY2bWvdTw&s"
-                      alt="...">
-                    <h5 class="title">Ratan Tata</h5>
-                  </a>
-                  <p class="description">
-                    Ceo/Co-Founder
-                  </p>
-                </div>
+                  <div class="author">
+                    <div class="block block-one"></div>
+                    <div class="block block-two"></div>
+                    <div class="block block-three"></div>
+                    <div class="block block-four"></div>
+                    <a href="javascript:void(0)">
+                      <img class="avatar" src="../assets/img/emilyz.jpg" alt="...">
+                      <h5 class="title">Mike Andrew</h5>
+                    </a>
+                    <p class="description">
+                      Ceo/Co-Founder
+                    </p>
+                  </div>
                 </p>
                 <div class="card-description">
-                  Do not be scared of the truth because we need to restart the human foundation in truth And I love you
-                  like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                  Do not be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
                 </div>
               </div>
               <div class="card-footer">
