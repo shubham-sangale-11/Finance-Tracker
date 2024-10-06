@@ -25,11 +25,8 @@
         <div class="sidebar">
 
             <div class="sidebar-wrapper">
-                <div class="logo">
-                    <a href="javascript:void(0)" class="simple-text logo-mini">
-                    </a>
-                    <a href="javascript:void(0)" class="simple-text logo-normal">
-                    </a>
+                <div class="logo text-center">
+                    <img height="60px" src="/assets/img/Logos/logo_transparent.png" alt="">
                 </div>
                 <ul class="nav">
                     <li class="active ">
@@ -57,7 +54,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./rtl.html">
+                        <a href="./investment.html">
                             <i class="tim-icons icon-chart-pie-36"></i>
                             <p>Investment</p>
                         </a>
@@ -120,16 +117,18 @@
                                     </p>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                                    <li class="nav-link"><a href="#" class="nav-item dropdown-item">Mike John responded
-                                            to your email</a></li>
-                                    <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">You
-                                            have 5 more tasks</a></li>
+                                    <li class="nav-link"><a href="#" class="nav-item dropdown-item">Notifications</a>
+                                    </li>
                                     <li class="nav-link"><a href="javascript:void(0)"
-                                            class="nav-item dropdown-item">Your friend Michael is in town</a></li>
+                                            class="nav-item dropdown-item">Group - 6</a></li>
                                     <li class="nav-link"><a href="javascript:void(0)"
-                                            class="nav-item dropdown-item">Another notification</a></li>
+                                            class="nav-item dropdown-item">Group - 6
+                                        </a></li>
                                     <li class="nav-link"><a href="javascript:void(0)"
-                                            class="nav-item dropdown-item">Another one</a></li>
+                                            class="nav-item dropdown-item">Group - 6
+                                        </a></li>
+                                    <li class="nav-link"><a href="javascript:void(0)"
+                                            class="nav-item dropdown-item">Group - 6</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown nav-item">
@@ -143,7 +142,7 @@
                                     </p>
                                 </a>
                                 <ul class="dropdown-menu dropdown-navbar">
-                                    <li class="nav-link"><a href="javascript:void(0)"
+                                    <li class="nav-link"><a href="user-profile.html"
                                             class="nav-item dropdown-item">Profile</a></li>
                                     <li class="nav-link"><a href="javascript:void(0)"
                                             class="nav-item dropdown-item">Settings</a></li>
@@ -175,7 +174,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="card card-tasks">
-                            <div class="card-header ">
+                            <div class="card-header">
                                 <h6 class="title d-inline">Tracker</h6>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-link dropdown-toggle btn-icon"
@@ -189,7 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body ">
+                            <div class="card-body">
                                 <form action="" onsubmit="addTransaction(event)">
                                     <div>
                                         <input id="cat" type="text" placeholder="Enter your category"
@@ -198,12 +197,6 @@
                                     <div class="d-flex justify-content-around mt-3">
                                         <input class="form-control" type="number" placeholder="Enter your amount"
                                             id="amount">
-                                        <select id="type" class="custom-select w-25">
-                                            <option value="">Type</option>
-                                            <option value="Expense">Expense</option>
-                                            <option value="Saving">Saving</option>
-                                            <option value="Income">Income</option>
-                                        </select>
                                     </div>
                                     <div class="mt-3">
                                         <input type="text" class="form-control"
@@ -240,7 +233,6 @@
                                             <tr>
                                                 <th>Transaction Name</th>
                                                 <th>Date</th>
-                                                <th>Type</th>
                                                 <th class="text-center">Amount</th>
                                                 <th class="text-center">Action</th>
                                             </tr>
@@ -261,7 +253,6 @@
 
                         const category = document.getElementById('cat').value;
                         const amount = document.getElementById('amount').value;
-                        const type = document.getElementById('type').value;
                         const refNumber = document.getElementById('refNumber').value;
                         const date = document.getElementById('date').value;
                         const paymentMethod = document.getElementById('paymentMethod').value;
@@ -274,7 +265,6 @@
                         row.innerHTML = `
                             <td>${category}</td>
                             <td>${date}</td>
-                            <td>${type}</td>
                             <td class="text-center">&#8377; ${amount}</td>
                             <td class="text-center"><button class="btn btn-danger" onclick="deleteTransaction(this)">Delete</button></td>
                         `;
@@ -288,79 +278,51 @@
                         row.parentNode.removeChild(row); // Remove the row from the table
                     }
                 </script>
-
             </div>
-            <footer class="footer">
-                <!-- <div class="container-fluid">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="copyright">
-                        ©
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>2018 made with <i class="tim-icons icon-heart-2"></i> by
-                        <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
-                    </div>
-                </div> -->
-            </footer>
+            <footer class="footer"></footer>
+
         </div>
-    </div>
-    <div class="fixed-plugin">
-        <div class="dropdown show-dropdown">
-            <a href="#" data-toggle="dropdown">
-                <i class="fa fa-cog fa-2x"> </i>
-            </a>
-            <ul class="dropdown-menu">
-                <li class="header-title"> Sidebar Background</li>
-                <li class="adjustments-line">
-                    <a href="javascript:void(0)" class="switch-trigger background-color">
-                        <div class="badge-colors text-center">
-                            <span class="badge filter badge-primary active" data-color="primary"></span>
-                            <span class="badge filter badge-info" data-color="blue"></span>
-                            <span class="badge filter badge-success" data-color="green"></span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </a>
-                </li>
-                <li class="adjustments-line text-center color-change">
-                    <span class="color-label">LIGHT MODE</span>
-                    <span class="badge light-badge mr-2"></span>
-                    <span class="badge dark-badge ml-2"></span>
-                    <span class="color-label">DARK MODE</span>
-                </li>
-            </ul>
+        <div class="fixed-plugin">
+            <div class="dropdown show-dropdown">
+                <a href="#" data-toggle="dropdown">
+                    <i class="fa fa-cog fa-2x"> </i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="header-title"> Sidebar Background</li>
+                    <li class="adjustments-line">
+                        <a href="javascript:void(0)" class="switch-trigger background-color">
+                            <div class="badge-colors text-center">
+                                <span class="badge filter badge-primary active" data-color="primary"></span>
+                                <span class="badge filter badge-info" data-color="blue"></span>
+                                <span class="badge filter badge-success" data-color="green"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li class="adjustments-line text-center color-change">
+                        <span class="color-label">LIGHT MODE</span>
+                        <span class="badge light-badge mr-2"></span>
+                        <span class="badge dark-badge ml-2"></span>
+                        <span class="color-label">DARK MODE</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <script>
-        document.getElementById('submit-btn').addEventListener('click', function () {
+        <script>
+            document.getElementById('submit-btn').addEventListener('click', function () {
 
-            const source = document.getElementById('cat').value;
-            const amount = document.getElementById('amount').value;
-            const date = document.getElementById('date').value;
-            const paymentMethod = document.getElementById('payment-method').value;
-
-
-            if (source && amount && date) {
-                const tableBody = document.querySelector('.table tbody');
+                const source = document.getElementById('cat').value;
+                const amount = document.getElementById('amount').value;
+                const date = document.getElementById('date').value;
+                const paymentMethod = document.getElementById('payment-method').value;
 
 
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
+                if (source && amount && date) {
+                    const tableBody = document.querySelector('.table tbody');
+
+
+                    const newRow = document.createElement('tr');
+                    newRow.innerHTML = `
                     <td>${source}</td>
                     <td>${new Date(date).toLocaleDateString()}</td>
                     <td>${paymentMethod}</td>
@@ -368,166 +330,166 @@
                 `;
 
 
-                tableBody.appendChild(newRow);
+                    tableBody.appendChild(newRow);
 
 
-                document.getElementById('income-form').reset();
-            } else {
+                    document.getElementById('income-form').reset();
+                } else {
 
-                alert('Please fill in all required fields.');
-            }
-        });
-    </script>
+                    alert('Please fill in all required fields.');
+                }
+            });
+        </script>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!--   Core JS Files   -->
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--   Core JS Files   -->
 
-    <script src="../assets/js/core/jquery.min.js"></script>
-    <script src="../assets/js/core/popper.min.js"></script>
-    <script src="../assets/js/core/bootstrap.min.js"></script>
-    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <!--  Google Maps Plugin    -->
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <!-- Chart JS -->
-    <script src="../assets/js/plugins/chartjs.min.js"></script>
-    <!--  Notifications Plugin    -->
-    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
-    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-    <script src="../assets/demo/demo.js"></script>
+        <script src="../assets/js/core/jquery.min.js"></script>
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+        <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <!--  Google Maps Plugin    -->
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+        <!-- Chart JS -->
+        <script src="../assets/js/plugins/chartjs.min.js"></script>
+        <!--  Notifications Plugin    -->
+        <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+        <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
+        <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+        <script src="../assets/demo/demo.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $().ready(function () {
-                $sidebar = $('.sidebar');
-                $navbar = $('.navbar');
-                $main_panel = $('.main-panel');
+        <script>
+            $(document).ready(function () {
+                $().ready(function () {
+                    $sidebar = $('.sidebar');
+                    $navbar = $('.navbar');
+                    $main_panel = $('.main-panel');
 
-                $full_page = $('.full-page');
+                    $full_page = $('.full-page');
 
-                $sidebar_responsive = $('body > .navbar-collapse');
-                sidebar_mini_active = true;
-                white_color = false;
+                    $sidebar_responsive = $('body > .navbar-collapse');
+                    sidebar_mini_active = true;
+                    white_color = false;
 
-                window_width = $(window).width();
+                    window_width = $(window).width();
 
-                fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+                    fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
 
 
 
-                $('.fixed-plugin a').click(function (event) {
-                    if ($(this).hasClass('switch-trigger')) {
-                        if (event.stopPropagation) {
-                            event.stopPropagation();
-                        } else if (window.event) {
-                            window.event.cancelBubble = true;
+                    $('.fixed-plugin a').click(function (event) {
+                        if ($(this).hasClass('switch-trigger')) {
+                            if (event.stopPropagation) {
+                                event.stopPropagation();
+                            } else if (window.event) {
+                                window.event.cancelBubble = true;
+                            }
                         }
-                    }
-                });
+                    });
 
-                $('.fixed-plugin .background-color span').click(function () {
-                    $(this).siblings().removeClass('active');
-                    $(this).addClass('active');
+                    $('.fixed-plugin .background-color span').click(function () {
+                        $(this).siblings().removeClass('active');
+                        $(this).addClass('active');
 
-                    var new_color = $(this).data('color');
+                        var new_color = $(this).data('color');
 
-                    if ($sidebar.length != 0) {
-                        $sidebar.attr('data', new_color);
-                    }
+                        if ($sidebar.length != 0) {
+                            $sidebar.attr('data', new_color);
+                        }
 
-                    if ($main_panel.length != 0) {
-                        $main_panel.attr('data', new_color);
-                    }
+                        if ($main_panel.length != 0) {
+                            $main_panel.attr('data', new_color);
+                        }
 
-                    if ($full_page.length != 0) {
-                        $full_page.attr('filter-color', new_color);
-                    }
+                        if ($full_page.length != 0) {
+                            $full_page.attr('filter-color', new_color);
+                        }
 
-                    if ($sidebar_responsive.length != 0) {
-                        $sidebar_responsive.attr('data', new_color);
-                    }
-                });
+                        if ($sidebar_responsive.length != 0) {
+                            $sidebar_responsive.attr('data', new_color);
+                        }
+                    });
 
-                $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function () {
-                    var $btn = $(this);
+                    $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function () {
+                        var $btn = $(this);
 
-                    if (sidebar_mini_active == true) {
-                        $('body').removeClass('sidebar-mini');
-                        sidebar_mini_active = false;
-                        blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
-                    } else {
-                        $('body').addClass('sidebar-mini');
-                        sidebar_mini_active = true;
-                        blackDashboard.showSidebarMessage('Sidebar mini activated...');
-                    }
-
-
-                    var simulateWindowResize = setInterval(function () {
-                        window.dispatchEvent(new Event('resize'));
-                    }, 180);
+                        if (sidebar_mini_active == true) {
+                            $('body').removeClass('sidebar-mini');
+                            sidebar_mini_active = false;
+                            blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+                        } else {
+                            $('body').addClass('sidebar-mini');
+                            sidebar_mini_active = true;
+                            blackDashboard.showSidebarMessage('Sidebar mini activated...');
+                        }
 
 
-                    setTimeout(function () {
-                        clearInterval(simulateWindowResize);
-                    }, 1000);
-                });
+                        var simulateWindowResize = setInterval(function () {
+                            window.dispatchEvent(new Event('resize'));
+                        }, 180);
 
-                $('.switch-change-color input').on("switchChange.bootstrapSwitch", function () {
-                    var $btn = $(this);
 
-                    if (white_color == true) {
-
-                        $('body').addClass('change-background');
                         setTimeout(function () {
-                            $('body').removeClass('change-background');
-                            $('body').removeClass('white-content');
-                        }, 900);
-                        white_color = false;
-                    } else {
+                            clearInterval(simulateWindowResize);
+                        }, 1000);
+                    });
 
-                        $('body').addClass('change-background');
-                        setTimeout(function () {
-                            $('body').removeClass('change-background');
-                            $('body').addClass('white-content');
-                        }, 900);
+                    $('.switch-change-color input').on("switchChange.bootstrapSwitch", function () {
+                        var $btn = $(this);
 
-                        white_color = true;
-                    }
+                        if (white_color == true) {
+
+                            $('body').addClass('change-background');
+                            setTimeout(function () {
+                                $('body').removeClass('change-background');
+                                $('body').removeClass('white-content');
+                            }, 900);
+                            white_color = false;
+                        } else {
+
+                            $('body').addClass('change-background');
+                            setTimeout(function () {
+                                $('body').removeClass('change-background');
+                                $('body').addClass('white-content');
+                            }, 900);
+
+                            white_color = true;
+                        }
 
 
-                });
+                    });
 
-                $('.light-badge').click(function () {
-                    $('body').addClass('white-content');
-                });
+                    $('.light-badge').click(function () {
+                        $('body').addClass('white-content');
+                    });
 
-                $('.dark-badge').click(function () {
-                    $('body').removeClass('white-content');
+                    $('.dark-badge').click(function () {
+                        $('body').removeClass('white-content');
+                    });
                 });
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
+        </script>
+        <script>
+            $(document).ready(function () {
 
-            demo.initDashboardPageCharts();
+                demo.initDashboardPageCharts();
 
-        });
-    </script>
-    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-    <script>
-        window.TrackJS &&
-            TrackJS.install({
-                token: "ee6fab19c5a04ac1a32a645abde4613a",
-                application: "black-dashboard-free"
             });
+        </script>
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+        <script>
+            window.TrackJS &&
+                TrackJS.install({
+                    token: "ee6fab19c5a04ac1a32a645abde4613a",
+                    application: "black-dashboard-free"
+                });
 
-    </script>
+        </script>
 
 
 </body>

@@ -7,6 +7,19 @@ function getYear() {
 
 getYear();
 
+window.onscroll = function() {
+  var navbar = document.querySelector('.header_section');
+  var sticky = navbar.offsetTop;
+
+  if (window.pageYOffset > sticky) {
+      navbar.classList.add('sticky');
+  } else {
+      navbar.classList.remove('sticky');
+  }
+};
+
+
+
 
 // client section owl carousel
 $(".client_owl-carousel").owlCarousel({
