@@ -1,84 +1,129 @@
-# Finance Tracker for Organization
+# Project Title
 
-This project was developed as part of the Construct Week at Masai School. The Finance Tracker is designed to help organizations keep track of their financial transactions and monitor their financial health efficiently. The project implements various front-end technologies to deliver a robust solution for financial tracking.
+Finance Tracker for an Organization
 
-## Team Details
+## Introduction
 
-- **Team Leader:** Shubham Sangale
-- **Team Members:**
-  - Sakshi Madne
-  - Shiv Sahni
-  - Sharvari Patil
-  - Afrin
+Finance Tracker for an Organization is a comprehensive finance management tool designed to help Organization efficiently track their income, expenses, and savings. The purpose of the project is to empower users with insights into their financial habits, allowing them to make informed decisions and achieve their financial goals. It offers features such as expense tracking, income monitoring, and savings goal management.
 
----
+## Project Type
 
-## CDNs and Plugins Used in the Project
+Frontend
 
-This project utilizes several CDNs and external plugins to enhance the functionality, interactivity, and appearance of the application. Below is a list of the key resources:
+## Deployed App
 
-### **1. Google Fonts**
+Frontend: [https://trackify-group-6.netlify.app/](https://trackify-group-6.netlify.app/)
 
-- **URL:** `https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800`
-- **Purpose:** Imports the `Poppins` font family, which is used across the project for typography consistency and style.
+## Directory Structure
 
-### **2. FontAwesome Icons (v5.0.6)**
+finance-tracker/
+├─ assets/
+│ ├─ css/
+│ ├─ demo/
+│ ├─ fonts/
+│ ├─ js/
+│ ├─ scss/
+├─ custom/
+│ ├─ css/
+│ ├─ fonts/
+│ ├─ images/
+│ ├─ js/
+├─ examples/
+│ ├─ about-us.html
+│ ├─ dashboard.html
+│ ├─ expense-tracker.html
+│ ├─ income.html
+│ ├─ investment.html
+│ ├─ login.html
+│ ├─ saving-goals.html
+│ ├─ sign-up.html
+│ ├─ summary-section.html
+│ ├─ user-profile.html
+├─ .gitattributes
+├─ index.html
+├─ README.md
 
-- **URL:** `https://use.fontawesome.com/releases/v5.0.6/css/all.css`
-- **Purpose:** Provides access to the FontAwesome icon library for scalable vector icons that can be customized with CSS.
+## Video Walkthrough of the project
 
-### **3. Nucleo Icons**
+https://youtu.be/9RH8GHP3rj4?si=GIXr40Hv429JNRDE
 
-- **Path:** `assets/css/nucleo-icons.css`
-- **Purpose:** Adds additional icon options via the Nucleo Icons library, complementing the FontAwesome set for more design flexibility.
+## Features
 
-### **4. Black Dashboard Theme**
+- **User Authentication**: Users can create accounts, log in, and manage their profiles.
+- **Expense Tracking**: Users can log their expenses, categorize them, and view their spending history.
+- **Income Tracking**: Users can log their income sources and view their total income over time.
+- **Dashboard Overview**: A user-friendly dashboard displays insights into their financial health, including income, expenses, and savings goals.
+- **Investment Tracking**: Users can track their investments and view performance metrics.
+- **Saving Goals**: Users can set and monitor savings goals to manage their finances effectively.
+- **Responsive Design**: The application is mobile-friendly and adapts to various screen sizes.
 
-- **Path:** `assets/css/black-dashboard.css?v=1.0.0`
-- **Purpose:** Contains the main styles for the Black Dashboard theme, which defines the layout, color scheme, and component styling.
+## Design Decisions or Assumptions
 
-## JavaScript Libraries and Plugins
+- The application assumes users are familiar with basic financial concepts and have internet access.
+- A clean and intuitive user interface was prioritized to enhance user experience.
+- The project is designed to be responsive, ensuring accessibility on both mobile and desktop devices.
+- Security measures were implemented to protect user data during authentication and transactions.
 
-### **1. jQuery (v3.x)**
+## Installation & Getting Started
 
-- **Path:** `assets/js/core/jquery.min.js`
-- **Purpose:** A fast and feature-rich JavaScript library that simplifies tasks like HTML document traversal, event handling, and AJAX.
+Since this is a frontend-only project, you can simply clone the repository and open the `index.html` file in your browser.
 
-### **2. Popper.js**
+```bash
+# Clone the repository
+git clone https://github.com/shubham-sangale-1/Finance-Tracker.git
+cd Finance-Tracker
+open index.html
+```
 
-- **Path:** `assets/js/core/popper.min.js`
-- **Purpose:** Enables positioning tooltips and popovers, used by Bootstrap components.
+## Usage
 
-### **3. Bootstrap (v4.x)**
+1. **Access the Application**:
 
-- **Path:** `assets/js/core/bootstrap.min.js`
-- **Purpose:** Provides responsive front-end components and JavaScript interactions for creating dynamic layouts.
+   - Open your web browser and navigate to [Trackify](https://trackify-group-6.netlify.app/).
 
-### **4. Perfect Scrollbar**
+2. **User Registration**:
 
-- **Path:** `assets/js/plugins/perfect-scrollbar.jquery.min.js`
-- **Purpose:** Enhances scrollbars, providing better aesthetics and control for custom scrolling.
+   - If you do not have an account, click on the **Sign Up** button to create a new account.
+   - Fill in the required fields (e.g., name, email, password) and submit the form.
+   - If you already have an account, click on the **Login** option instead.
 
-### **6. Chart.js**
+3. **Logging In**:
 
-- **Path:** `assets/js/plugins/chartjs.min.js`
-- **Purpose:** Renders interactive and responsive charts for visualizing data in the dashboard.
+   - After registration, or if you have an existing account, return to the homepage and click on the **Login** button.
+   - Enter your email and password to access your dashboard.
 
-### **7. Bootstrap Notify**
+4. **Tracking Income**:
 
-- **Path:** `assets/js/plugins/bootstrap-notify.js`
-- **Purpose:** Allows for Bootstrap-styled notification pop-ups and alerts to inform users of important actions or statuses.
+   - Once logged in, navigate to the **Income Tracker** section.
+   - Click on the **Add Income** button, fill in the details (amount, source, date), and submit.
 
-### **8. Black Dashboard JavaScript**
+5. **Tracking Expenses**:
 
-- **Path:** `assets/js/black-dashboard.min.js?v=1.0.0`
-- **Purpose:** Contains the core JavaScript for the Black Dashboard theme, controlling dynamic elements and functionality.
+   - Navigate to the **Expense Tracker** section.
+   - Click on the **Add Expense** button and enter the details (amount, category, date).
 
-### **10. TrackJS (Error Monitoring)**
+6. **Viewing Reports**:
+   - Access your dashboard to view summaries of your income and expenses, along with insights on your financial health.
 
-- **URL:** `https://cdn.trackjs.com/agent/v3/latest/t.js`
-- **Purpose:** A real-time error tracking service that monitors and logs JavaScript errors during runtime.
+## Credentials
 
----
+You can create your own credentials for accessing your information
 
-These resources play a crucial role in building the user interface and ensuring smooth interactions in the project.
+## API Used
+
+There is no API available
+
+## API Endpoints
+
+There is no API available
+
+## Technology Stack
+
+- **HTML**
+- **CSS**
+- **Bootstrap**
+- **JavaScript**
+- **JQuery**
+- **ChartJS**
+- **FontAwesome**
+- **Nucleo Icons**
