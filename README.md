@@ -15,7 +15,7 @@ Frontend
 Frontend: [https://trackify-group-6.netlify.app/](https://trackify-group-6.netlify.app/)
 
 ## Directory Structure
-
+```
 finance-tracker/
 ├─ assets/
 │ ├─ css/
@@ -42,6 +42,7 @@ finance-tracker/
 ├─ .gitattributes
 ├─ index.html
 ├─ README.md
+```
 
 ## Video Walkthrough of the project
 
